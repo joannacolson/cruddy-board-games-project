@@ -1,0 +1,19 @@
+<h2>Games</h2>
+
+<ul>
+	<% games.forEach(function(game) { %>
+		<li>
+
+			<!-- link here for editing game -->
+			<a href="<%= "/games/" + game.name %>">
+			<%= game.name %>
+			</a>
+
+			------------
+			<!-- deletion link here -->
+				<a class="delete-link" href="<%= "/games/" + game.name %>">
+        Delete
+      </a>
+		</li>
+	<% }) %>
+</ul>
